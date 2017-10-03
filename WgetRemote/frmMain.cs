@@ -33,10 +33,11 @@ namespace WgetRemote
         public frmMain()
         {
             InitializeComponent();
-            ProgramSettings.settings = new ProgramSettings();
+            ProgramSettings.settings = new ProgramSettings();            
             Localization.LoadLanguage();
             LocalizateForm();
             LoadState();
+            ApplySettings();
         }
 
         private void LocalizateForm()
@@ -187,15 +188,8 @@ namespace WgetRemote
             return;
         }
 
-        private void LoadState()
-        {            
-            WgetDownload[] wgets;
-            string[,] urlstates;
-            string[] urlstat=new string[2];
-            int count, i;
-            ListViewItem download;
-            state = new ProgramState();
-            txtUrls.Text = state.urls;
+        private void ApplySettings()
+        {
             timAutoUpdate.Enabled = ProgramSettings.settings.AutoUpdate;
             timAutoUpdate.Interval = ProgramSettings.settings.AutoUpdateInt * 1000;
             if (ProgramSettings.settings.ClipboardMon)
@@ -206,7 +200,17 @@ namespace WgetRemote
             {
                 ClipboardMonitor.ClipboardUpdate -= ClipboardMonitor_ClipboardUpdate;
             }
+        }
 
+        private void LoadState()
+        {            
+            WgetDownload[] wgets;
+            string[,] urlstates;
+            string[] urlstat=new string[2];
+            int count, i;
+            ListViewItem download;
+            state = new ProgramState();
+            txtUrls.Text = state.urls;
             if (state.wgets != null)
             {
                 wgets = state.wgets;
@@ -398,6 +402,7 @@ namespace WgetRemote
             if (settings.ShowDialog() == DialogResult.OK)
             {
                 LocalizateForm();
+                ApplySettings();
             }
         }
 

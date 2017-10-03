@@ -169,26 +169,33 @@ namespace WgetRemote
 
         private string SshExec(string ssh_cmd)
         {
-            string result = ""; 
-            SshExec exec=null;
-            if (ProgramSettings.settings.SshKey.Length == 0)
-                exec = new SshExec(ProgramSettings.settings.SshHost, ProgramSettings.settings.SshLogin, ProgramSettings.settings.SshPass);            
+            string result = "";
+            SshExec exec = SshConnect(ProgramSettings.settings.SshHost, ProgramSettings.settings.SshPort,
+                 ProgramSettings.settings.SshLogin, ProgramSettings.settings.SshPass, ProgramSettings.settings.SshKey); 
+            result = exec.RunCommand(ssh_cmd).Replace("\n", " ");            
+            exec.Close();
+            return result;
+        }
+
+        public static SshExec SshConnect(string ssh_host, int ssh_port, string ssh_login, string ssh_pass, string ssh_key)
+        {
+            SshExec exec = null;
+            if (ssh_key.Length == 0)
+                exec = new SshExec(ssh_host, ssh_login, ssh_pass);
             else
             {
                 try
                 {
-                    exec = new SshExec(ProgramSettings.settings.SshHost, ProgramSettings.settings.SshLogin);
-                    if (ProgramSettings.settings.SshPass.Length == 0)
-                        exec.AddIdentityFile(ProgramSettings.settings.SshKey);
+                    exec = new SshExec(ssh_host, ssh_login);
+                    if (ssh_pass.Length == 0)
+                        exec.AddIdentityFile(ssh_key);
                     else
-                        exec.AddIdentityFile(ProgramSettings.settings.SshKey, ProgramSettings.settings.SshPass);
+                        exec.AddIdentityFile(ssh_key, ssh_pass);
                 }
-                catch { }
+                catch { }                
             }
-            exec.Connect(ProgramSettings.settings.SshPort);
-            result = exec.RunCommand(ssh_cmd).Replace("\n", " ");            
-            exec.Close();
-            return result;
+            exec.Connect(ssh_port);
+            return exec;
         }
     }
 }

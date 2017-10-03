@@ -65,12 +65,13 @@
             this.txtWgetCmd = new System.Windows.Forms.TextBox();
             this.lblWgetCmd = new System.Windows.Forms.Label();
             this.grbServerPath = new System.Windows.Forms.GroupBox();
-            this.lblDownloadsDir = new System.Windows.Forms.Label();
-            this.txtDownloadsDir = new System.Windows.Forms.TextBox();
-            this.lblLogsDir = new System.Windows.Forms.Label();
-            this.txtLogsDir = new System.Windows.Forms.TextBox();
-            this.lblLstDir = new System.Windows.Forms.Label();
             this.txtLstDir = new System.Windows.Forms.TextBox();
+            this.lblLstDir = new System.Windows.Forms.Label();
+            this.txtLogsDir = new System.Windows.Forms.TextBox();
+            this.lblLogsDir = new System.Windows.Forms.Label();
+            this.txtDownloadsDir = new System.Windows.Forms.TextBox();
+            this.lblDownloadsDir = new System.Windows.Forms.Label();
+            this.cmdTestConnection = new System.Windows.Forms.Button();
             this.grbConnectionSettings.SuspendLayout();
             this.grbCommonSettings.SuspendLayout();
             this.grbServerSettings.SuspendLayout();
@@ -178,12 +179,12 @@
             // 
             this.txtSshKey.Location = new System.Drawing.Point(6, 71);
             this.txtSshKey.Name = "txtSshKey";
-            this.txtSshKey.Size = new System.Drawing.Size(412, 20);
+            this.txtSshKey.Size = new System.Drawing.Size(295, 20);
             this.txtSshKey.TabIndex = 27;
             // 
             // cmdBrowseKeyFile
             // 
-            this.cmdBrowseKeyFile.Location = new System.Drawing.Point(424, 71);
+            this.cmdBrowseKeyFile.Location = new System.Drawing.Point(299, 71);
             this.cmdBrowseKeyFile.Name = "cmdBrowseKeyFile";
             this.cmdBrowseKeyFile.Size = new System.Drawing.Size(27, 20);
             this.cmdBrowseKeyFile.TabIndex = 28;
@@ -225,6 +226,7 @@
             // 
             // grbConnectionSettings
             // 
+            this.grbConnectionSettings.Controls.Add(this.cmdTestConnection);
             this.grbConnectionSettings.Controls.Add(this.txtSshHost);
             this.grbConnectionSettings.Controls.Add(this.lblServer);
             this.grbConnectionSettings.Controls.Add(this.lblPort);
@@ -425,37 +427,12 @@
             this.grbServerPath.TabStop = false;
             this.grbServerPath.Text = "Server path";
             // 
-            // lblDownloadsDir
+            // txtLstDir
             // 
-            this.lblDownloadsDir.AutoSize = true;
-            this.lblDownloadsDir.Location = new System.Drawing.Point(3, 16);
-            this.lblDownloadsDir.Name = "lblDownloadsDir";
-            this.lblDownloadsDir.Size = new System.Drawing.Size(76, 13);
-            this.lblDownloadsDir.TabIndex = 0;
-            this.lblDownloadsDir.Text = "DownloadsDir:";
-            // 
-            // txtDownloadsDir
-            // 
-            this.txtDownloadsDir.Location = new System.Drawing.Point(6, 33);
-            this.txtDownloadsDir.Name = "txtDownloadsDir";
-            this.txtDownloadsDir.Size = new System.Drawing.Size(445, 20);
-            this.txtDownloadsDir.TabIndex = 1;
-            // 
-            // lblLogsDir
-            // 
-            this.lblLogsDir.AutoSize = true;
-            this.lblLogsDir.Location = new System.Drawing.Point(3, 56);
-            this.lblLogsDir.Name = "lblLogsDir";
-            this.lblLogsDir.Size = new System.Drawing.Size(46, 13);
-            this.lblLogsDir.TabIndex = 36;
-            this.lblLogsDir.Text = "LogsDir:";
-            // 
-            // txtLogsDir
-            // 
-            this.txtLogsDir.Location = new System.Drawing.Point(6, 72);
-            this.txtLogsDir.Name = "txtLogsDir";
-            this.txtLogsDir.Size = new System.Drawing.Size(445, 20);
-            this.txtLogsDir.TabIndex = 37;
+            this.txtLstDir.Location = new System.Drawing.Point(6, 111);
+            this.txtLstDir.Name = "txtLstDir";
+            this.txtLstDir.Size = new System.Drawing.Size(445, 20);
+            this.txtLstDir.TabIndex = 39;
             // 
             // lblLstDir
             // 
@@ -466,12 +443,47 @@
             this.lblLstDir.TabIndex = 38;
             this.lblLstDir.Text = "LstDir:";
             // 
-            // txtLstDir
+            // txtLogsDir
             // 
-            this.txtLstDir.Location = new System.Drawing.Point(6, 111);
-            this.txtLstDir.Name = "txtLstDir";
-            this.txtLstDir.Size = new System.Drawing.Size(445, 20);
-            this.txtLstDir.TabIndex = 39;
+            this.txtLogsDir.Location = new System.Drawing.Point(6, 72);
+            this.txtLogsDir.Name = "txtLogsDir";
+            this.txtLogsDir.Size = new System.Drawing.Size(445, 20);
+            this.txtLogsDir.TabIndex = 37;
+            // 
+            // lblLogsDir
+            // 
+            this.lblLogsDir.AutoSize = true;
+            this.lblLogsDir.Location = new System.Drawing.Point(3, 56);
+            this.lblLogsDir.Name = "lblLogsDir";
+            this.lblLogsDir.Size = new System.Drawing.Size(46, 13);
+            this.lblLogsDir.TabIndex = 36;
+            this.lblLogsDir.Text = "LogsDir:";
+            // 
+            // txtDownloadsDir
+            // 
+            this.txtDownloadsDir.Location = new System.Drawing.Point(6, 33);
+            this.txtDownloadsDir.Name = "txtDownloadsDir";
+            this.txtDownloadsDir.Size = new System.Drawing.Size(445, 20);
+            this.txtDownloadsDir.TabIndex = 1;
+            // 
+            // lblDownloadsDir
+            // 
+            this.lblDownloadsDir.AutoSize = true;
+            this.lblDownloadsDir.Location = new System.Drawing.Point(3, 16);
+            this.lblDownloadsDir.Name = "lblDownloadsDir";
+            this.lblDownloadsDir.Size = new System.Drawing.Size(76, 13);
+            this.lblDownloadsDir.TabIndex = 0;
+            this.lblDownloadsDir.Text = "DownloadsDir:";
+            // 
+            // cmdTestConnection
+            // 
+            this.cmdTestConnection.Location = new System.Drawing.Point(345, 58);
+            this.cmdTestConnection.Name = "cmdTestConnection";
+            this.cmdTestConnection.Size = new System.Drawing.Size(105, 36);
+            this.cmdTestConnection.TabIndex = 29;
+            this.cmdTestConnection.Text = "Test connection";
+            this.cmdTestConnection.UseVisualStyleBackColor = true;
+            this.cmdTestConnection.Click += new System.EventHandler(this.cmdTestConnection_Click);
             // 
             // frmSettings
             // 
@@ -548,5 +560,6 @@
         private System.Windows.Forms.TextBox txtLogsDir;
         private System.Windows.Forms.Label lblLstDir;
         private System.Windows.Forms.TextBox txtLstDir;
+        private System.Windows.Forms.Button cmdTestConnection;
     }
 }

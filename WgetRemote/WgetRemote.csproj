@@ -105,7 +105,9 @@
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="COPYING" />
+    <None Include="COPYING">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Language\English.resx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

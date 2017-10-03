@@ -23,6 +23,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using System.IO;
+using Tamir.SharpSsh;
 
 namespace WgetRemote
 {
@@ -86,6 +87,27 @@ namespace WgetRemote
         private void cmdOpenKeyFile_Click(object sender, EventArgs e)
         {
             SelectKeyFile();
+        }
+
+        private void cmdTestConnection_Click(object sender, EventArgs e)
+        {
+            TestConnection();
+        }
+
+        private void TestConnection()
+        {
+            try
+            {
+                SshExec exec = WgetDownload.SshConnect(txtSshHost.Text, int.Parse(txtSshPort.Text), txtSshLogin.Text,
+                    txtSshPass.Text, txtSshKey.Text);
+                string server=exec.ServerVersion;
+                exec.Close();
+                MessageBox.Show(Localization.GetString("Ok") + "\r\n" + server, Localization.GetString("TestConnection"), MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, Localization.GetString("TestConnection"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

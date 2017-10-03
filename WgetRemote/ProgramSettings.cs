@@ -33,12 +33,12 @@ namespace WgetRemote
         public string SshPass = "";
         public string SshKey = "";
         public int SshPort = 22;
-        public bool AutoUpdate = true;
-        public int AutoUpdateInt = 3;
-        public bool ClipboardMon = true;
+        public bool AutoUpdate = false;
+        public int AutoUpdateInt = 5;
+        public bool ClipboardMon = false;
         public string Language = "English";
         public string WgetCmd = "wget -P %downloads_dir% -i %list_name% -b -c --tries=0 --retry-connrefused -o %log_name%";
-        public string PsCmd = "ps aux | grep %pid% | grep -v grep";
+        public string PsCmd = "ps -p %pid% | grep %pid%";
         public string ReadLogCmd = "tail -n 1 %log_name%";
         public string MkDirCmd = "mkdir -p %download_dir%;mkdir -p %log_dir%;mkdir -p %lst_dir%";
         public string KillCmd = "kill -9 %pid%";
