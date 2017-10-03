@@ -249,6 +249,9 @@
   <data name="StopMenuToolTip" xml:space="preserve">
     <value>Остановить закачку</value>
   </data>
+  <data name="TestConnection" xml:space="preserve">
+    <value>Проверка соединения</value>
+  </data>
   <data name="Url" xml:space="preserve">
     <value>Url</value>
   </data>
