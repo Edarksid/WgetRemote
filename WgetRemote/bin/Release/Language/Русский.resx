@@ -118,156 +118,156 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Add" xml:space="preserve">
-    <value>Add</value>
+    <value>Добавить</value>
   </data>
   <data name="AddAsQueue" xml:space="preserve">
-    <value>Add as queue</value>
+    <value>Добавить как очередь</value>
   </data>
   <data name="AutoUpdate" xml:space="preserve">
-    <value>Auto update status every (in seconds):</value>
+    <value>Автообновление статуса закачек(сек):</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>Cancel</value>
+    <value>Отмена</value>
   </data>
   <data name="ClipboardMon" xml:space="preserve">
-    <value>Monitor clipboard</value>
+    <value>Следить за буфером обмена</value>
   </data>
   <data name="ClipboardUrls" xml:space="preserve">
-    <value>Have found URLs, please check.</value>
+    <value>Найдены ссылки в буфере обмена, проверьте</value>
   </data>
   <data name="CommonSettings" xml:space="preserve">
-    <value>Common settings</value>
+    <value>Общие параметры</value>
   </data>
   <data name="ConnectionSettings" xml:space="preserve">
-    <value>Connection setting</value>
+    <value>Параметры подключения</value>
   </data>
   <data name="CopyStatus" xml:space="preserve">
-    <value>Copy status</value>
+    <value>Скопировать статус</value>
   </data>
   <data name="CopyStatusToolTip" xml:space="preserve">
-    <value>Copy status to clipboard</value>
+    <value>Скопировать статус в буфер обмена</value>
   </data>
   <data name="DownloadsDir" xml:space="preserve">
-    <value>Downloads directory:</value>
+    <value>Папка для закачек:</value>
   </data>
   <data name="Exit" xml:space="preserve">
-    <value>Exit</value>
+    <value>Выход</value>
   </data>
   <data name="ExitMenu" xml:space="preserve">
-    <value>E&amp;xit</value>
+    <value>Вы&amp;ход</value>
   </data>
   <data name="ExitMenuToolTip" xml:space="preserve">
-    <value>Close application</value>
+    <value>Закрыть программу</value>
   </data>
   <data name="FinishedMark" xml:space="preserve">
-    <value>Download completed marker in log:</value>
+    <value>Маркер завершения закачки в логе:</value>
   </data>
   <data name="KeyFile" xml:space="preserve">
-    <value>Key file:</value>
+    <value>Ключевой файл:</value>
   </data>
   <data name="KillCmd" xml:space="preserve">
-    <value>kill command:</value>
+    <value>Комманда kill:</value>
   </data>
   <data name="Language" xml:space="preserve">
-    <value>Language</value>
+    <value>Язык</value>
   </data>
   <data name="Login" xml:space="preserve">
-    <value>Login:</value>
+    <value>Имя пользователя:</value>
   </data>
   <data name="LogsDir" xml:space="preserve">
-    <value>Downloads logs directory:</value>
+    <value>Папка для логов закачек:</value>
   </data>
   <data name="LstDir" xml:space="preserve">
-    <value>Downloads lists directory:</value>
+    <value>Папка для списков закачек:</value>
   </data>
   <data name="MkDirCmd" xml:space="preserve">
-    <value>mkdir command:</value>
+    <value>Комманда mkdir:</value>
   </data>
   <data name="NotRun" xml:space="preserve">
-    <value>Is NOT run.</value>
+    <value>Незапущена.</value>
   </data>
   <data name="Ok" xml:space="preserve">
     <value>OK</value>
   </data>
   <data name="OpenKeyFile" xml:space="preserve">
-    <value>Select privite key file</value>
+    <value>Выбрать файл закрытого ключа</value>
   </data>
   <data name="Password" xml:space="preserve">
-    <value>Password:</value>
+    <value>Пароль:</value>
   </data>
   <data name="Port" xml:space="preserve">
-    <value>Port:</value>
+    <value>Порт:</value>
   </data>
   <data name="PsCmd" xml:space="preserve">
-    <value>ps command:</value>
+    <value>Комманда ps:</value>
   </data>
   <data name="ReadLogCmd" xml:space="preserve">
-    <value>Read log command:</value>
+    <value>Комманда чтения лога:</value>
   </data>
   <data name="RemoveMenu" xml:space="preserve">
-    <value>&amp;Remove</value>
+    <value>У&amp;далить</value>
   </data>
   <data name="RemoveMenuToolTip" xml:space="preserve">
-    <value>Stop download, delete logfile, listfile on server and remove it from local list.</value>
+    <value>Остановить закачку, удалить лог, список на сервере и убрать из списка</value>
   </data>
   <data name="RestartMenu" xml:space="preserve">
-    <value>Rest&amp;art</value>
+    <value>Пе&amp;резапустить</value>
   </data>
   <data name="RestartMenuToolTip" xml:space="preserve">
-    <value>Restart download</value>
+    <value>Перезапустить закачку</value>
   </data>
   <data name="RmCmd" xml:space="preserve">
-    <value>rm command:</value>
+    <value>Комманда rm:</value>
   </data>
   <data name="Run" xml:space="preserve">
-    <value>Is run.</value>
+    <value>Запущена.</value>
   </data>
   <data name="Server" xml:space="preserve">
-    <value>Server:</value>
+    <value>Сервер:</value>
   </data>
   <data name="ServerPath" xml:space="preserve">
-    <value>Path on server</value>
+    <value>Пути на сервере</value>
   </data>
   <data name="ServerSettings" xml:space="preserve">
-    <value>Server settings</value>
+    <value>Настройки сервера</value>
   </data>
   <data name="Settings" xml:space="preserve">
-    <value>Settings</value>
+    <value>Настройки</value>
   </data>
   <data name="Status" xml:space="preserve">
-    <value>Status</value>
+    <value>Статус</value>
   </data>
   <data name="StatusMenu" xml:space="preserve">
-    <value>&amp;Status</value>
+    <value>&amp;Статус</value>
   </data>
   <data name="StatusMenuToolTip" xml:space="preserve">
-    <value>Update download status</value>
+    <value>Обновить информацию по закачке</value>
   </data>
   <data name="StopMenu" xml:space="preserve">
-    <value>Sto&amp;p</value>
+    <value>Останови&amp;ть</value>
   </data>
   <data name="StopMenuToolTip" xml:space="preserve">
-    <value>Stop download</value>
+    <value>Остановить закачку</value>
   </data>
   <data name="TestConnection" xml:space="preserve">
-    <value>Test connection</value>
+    <value>Проверка соединения</value>
   </data>
   <data name="Url" xml:space="preserve">
     <value>Url</value>
   </data>
   <data name="Urls" xml:space="preserve">
-    <value>URLs list:</value>
+    <value>Список ссылок:</value>
   </data>
   <data name="WgetCmd" xml:space="preserve">
-    <value>wget command:</value>
+    <value>Комманда wget:</value>
   </data>
   <data name="WgetError" xml:space="preserve">
-    <value>Error while parsing for pid! Debug info:
+    <value>Обнаружена ошибка при получении PID:
 %error%
 wget_cmd: %wget_cmd%
 ssh response: %result%</value>
   </data>
   <data name="WgetStarted" xml:space="preserve">
-    <value>Starded with PID %pid% and log %log_name%.</value>
+    <value>Запущена с PID %pid% и логом %log_name%.</value>
   </data>
 </root>

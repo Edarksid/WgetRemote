@@ -118,156 +118,156 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Add" xml:space="preserve">
-    <value>Add</value>
+    <value>足す</value>
   </data>
   <data name="AddAsQueue" xml:space="preserve">
-    <value>Add as queue</value>
+    <value>キューとして追加</value>
   </data>
   <data name="AutoUpdate" xml:space="preserve">
-    <value>Auto update status every (in seconds):</value>
+    <value>毎秒の自動更新ステータス（秒）：</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>Cancel</value>
+    <value>キャンセル</value>
   </data>
   <data name="ClipboardMon" xml:space="preserve">
-    <value>Monitor clipboard</value>
+    <value>クリップボードを監視する</value>
   </data>
   <data name="ClipboardUrls" xml:space="preserve">
-    <value>Have found URLs, please check.</value>
+    <value>見つかったURLを確認してください。</value>
   </data>
   <data name="CommonSettings" xml:space="preserve">
-    <value>Common settings</value>
+    <value>共通の設定</value>
   </data>
   <data name="ConnectionSettings" xml:space="preserve">
-    <value>Connection setting</value>
+    <value>接続設定</value>
   </data>
   <data name="CopyStatus" xml:space="preserve">
-    <value>Copy status</value>
+    <value>コピーステータス</value>
   </data>
   <data name="CopyStatusToolTip" xml:space="preserve">
-    <value>Copy status to clipboard</value>
+    <value>ステータスをクリップボードにコピーする</value>
   </data>
   <data name="DownloadsDir" xml:space="preserve">
-    <value>Downloads directory:</value>
+    <value>ダウンロードディレクトリ：</value>
   </data>
   <data name="Exit" xml:space="preserve">
-    <value>Exit</value>
+    <value>アプリケーションを閉じる</value>
   </data>
   <data name="ExitMenu" xml:space="preserve">
-    <value>E&amp;xit</value>
+    <value>アプリケーションを閉じる</value>
   </data>
   <data name="ExitMenuToolTip" xml:space="preserve">
-    <value>Close application</value>
+    <value>アプリケーションを閉じる</value>
   </data>
   <data name="FinishedMark" xml:space="preserve">
-    <value>Download completed marker in log:</value>
+    <value>完成したマーカーをログにダウンロードする：</value>
   </data>
   <data name="KeyFile" xml:space="preserve">
-    <value>Key file:</value>
+    <value>キーファイル：</value>
   </data>
   <data name="KillCmd" xml:space="preserve">
-    <value>kill command:</value>
+    <value>killコマンド：</value>
   </data>
   <data name="Language" xml:space="preserve">
-    <value>Language</value>
+    <value>言語</value>
   </data>
   <data name="Login" xml:space="preserve">
-    <value>Login:</value>
+    <value>ログイン：</value>
   </data>
   <data name="LogsDir" xml:space="preserve">
-    <value>Downloads logs directory:</value>
+    <value>ダウンロードログディレクトリ：</value>
   </data>
   <data name="LstDir" xml:space="preserve">
-    <value>Downloads lists directory:</value>
+    <value>リストディレクトリをダウンロード：</value>
   </data>
   <data name="MkDirCmd" xml:space="preserve">
-    <value>mkdir command:</value>
+    <value>mkdirコマンド：</value>
   </data>
   <data name="NotRun" xml:space="preserve">
-    <value>Is NOT run.</value>
+    <value>実行ません。</value>
   </data>
   <data name="Ok" xml:space="preserve">
     <value>OK</value>
   </data>
   <data name="OpenKeyFile" xml:space="preserve">
-    <value>Select privite key file</value>
+    <value>秘密鍵ファイルを選択する</value>
   </data>
   <data name="Password" xml:space="preserve">
-    <value>Password:</value>
+    <value>パスワード：</value>
   </data>
   <data name="Port" xml:space="preserve">
-    <value>Port:</value>
+    <value>ポート：</value>
   </data>
   <data name="PsCmd" xml:space="preserve">
-    <value>ps command:</value>
+    <value>psコマンド：</value>
   </data>
   <data name="ReadLogCmd" xml:space="preserve">
-    <value>Read log command:</value>
+    <value>読み取りログコマンド：</value>
   </data>
   <data name="RemoveMenu" xml:space="preserve">
-    <value>&amp;Remove</value>
+    <value>削除する</value>
   </data>
   <data name="RemoveMenuToolTip" xml:space="preserve">
-    <value>Stop download, delete logfile, listfile on server and remove it from local list.</value>
+    <value>ダウンロードを停止し、ログファイルを削除し、サーバー上のリストファイルを削除し、ローカルリストから削除します。</value>
   </data>
   <data name="RestartMenu" xml:space="preserve">
-    <value>Rest&amp;art</value>
+    <value>再起動</value>
   </data>
   <data name="RestartMenuToolTip" xml:space="preserve">
-    <value>Restart download</value>
+    <value>ダウンロードを再開する</value>
   </data>
   <data name="RmCmd" xml:space="preserve">
-    <value>rm command:</value>
+    <value>rmコマンド：</value>
   </data>
   <data name="Run" xml:space="preserve">
-    <value>Is run.</value>
+    <value>実行ています。</value>
   </data>
   <data name="Server" xml:space="preserve">
-    <value>Server:</value>
+    <value>サーバ：</value>
   </data>
   <data name="ServerPath" xml:space="preserve">
-    <value>Path on server</value>
+    <value>サーバー上のパス</value>
   </data>
   <data name="ServerSettings" xml:space="preserve">
-    <value>Server settings</value>
+    <value>サーバー設定</value>
   </data>
   <data name="Settings" xml:space="preserve">
-    <value>Settings</value>
+    <value>設定</value>
   </data>
   <data name="Status" xml:space="preserve">
-    <value>Status</value>
+    <value>状態</value>
   </data>
   <data name="StatusMenu" xml:space="preserve">
-    <value>&amp;Status</value>
+    <value>状態</value>
   </data>
   <data name="StatusMenuToolTip" xml:space="preserve">
-    <value>Update download status</value>
+    <value>ダウンロード状況を更新する</value>
   </data>
   <data name="StopMenu" xml:space="preserve">
-    <value>Sto&amp;p</value>
+    <value>停止する</value>
   </data>
   <data name="StopMenuToolTip" xml:space="preserve">
-    <value>Stop download</value>
+    <value>ダウンロードを停止する</value>
   </data>
   <data name="TestConnection" xml:space="preserve">
-    <value>Test connection</value>
+    <value>テスト接続</value>
   </data>
   <data name="Url" xml:space="preserve">
-    <value>Url</value>
+    <value>URL</value>
   </data>
   <data name="Urls" xml:space="preserve">
-    <value>URLs list:</value>
+    <value>URLリスト：</value>
   </data>
   <data name="WgetCmd" xml:space="preserve">
-    <value>wget command:</value>
+    <value>wgetコマンド：</value>
   </data>
   <data name="WgetError" xml:space="preserve">
-    <value>Error while parsing for pid! Debug info:
+    <value>pidの解析中にエラーが発生しました。 デバッグ情報：
 %error%
-wget_cmd: %wget_cmd%
-ssh response: %result%</value>
+wget_cmd：%wget_cmd%
+sshの応答：%result%</value>
   </data>
   <data name="WgetStarted" xml:space="preserve">
-    <value>Starded with PID %pid% and log %log_name%.</value>
+    <value>PID %pid% と log %log_name% が実行ています</value>
   </data>
 </root>
